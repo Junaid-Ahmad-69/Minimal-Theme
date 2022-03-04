@@ -5,15 +5,16 @@
         display: flex;
         justify-content: space-between;
         margin: 15px 0;
-        &:hover{
-            cursor: pointer;
-        }
         #sprite{
             li{
                 display: inline-block;
                 list-style-type: none;
                 a{
                     text-decoration: none;
+                    padding: 1px;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }

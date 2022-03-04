@@ -189,12 +189,16 @@
   justify-content: space-between;
   margin: 15px 0;
 }
-#footer-content .icons:hover {
-  cursor: pointer;
-}
 #footer-content .icons #sprite li {
   display: inline-block;
   list-style-type: none;
+}
+#footer-content .icons #sprite li a {
+  text-decoration: none;
+  padding: 1px;
+}
+#footer-content .icons #sprite li a:hover {
+  cursor: pointer;
 }
 #footer-content .copywrite small {
   font-size: 12px;
