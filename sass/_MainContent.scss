@@ -1,0 +1,153 @@
+@import "MaxinFunction";
+@import "Variables";
+#main-content{
+    @include container;
+    display: grid;
+    grid-template-columns: repeat(2,230px 770px);
+    grid-gap: 10px;
+    .main-left{
+        border-top: 4px solid $active;
+        border-bottom: 4px solid $active;
+        .search-bar{
+            margin: 25px 0;
+            position: relative;
+            input{
+                border: none;
+                outline:none;
+                border: 1px solid $light_grey;
+                height: 27px;
+                width: 228px;
+            }
+            ::placeholder{
+                padding: 10px;
+                // -moz-padding:10px;
+                font-size: 12px;
+                color: $smoke;
+                font-family: "Arial";
+            }
+            .search-holder{
+                position: absolute;
+                right: 10px;
+                top: 4px;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+            .latest{
+                border-bottom: 1px solid $black_dark;
+                h4{
+                    font-size: 24px;
+                    color: $active;
+                    font-weight: lighter;
+                    margin-top: 20px;
+                    border-bottom: 1px solid $bord;
+                    padding-bottom: 5px;
+                }
+                .latest-sub{
+                    color: $active;
+                    font-size: 14px;
+                    margin: 25px 0 10px 0;
+                    font-weight: 500;
+                }
+                .latest-sub-2{
+                    font-size: 12px;
+                    color: $black_dark;
+                    text-align: justify;
+                    margin-bottom: 10px;
+                }
+                .read{
+                    margin-bottom:20px;
+                    a{
+                        color: $smoke_light;
+                        font-size: 12px;
+                        text-decoration: none;
+                        &:hover{
+                            color: $black_dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-section{
+        border-top: 4px solid $active;
+        border-bottom: 4px solid $active;
+        .main-holder{
+            margin: 25px 0;
+            position: relative;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            .overlay{
+                position:absolute;
+                right: 0;
+                width: 210px;
+                height: 325px;
+                opacity: .5;
+                top:0;
+                background-color: $smoke_light;
+                padding: 40px;
+                z-index: 1;
+            }
+            .description{
+                position:absolute;
+                right: 0;
+                top:60px;
+                color:$white;
+                z-index: 1;
+                h3{
+                    text-align: center;
+                    opacity: 1;
+                    margin: 10px 0;
+                    color: $white;
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 12px;
+                    width: 210px;
+                    padding: 12px;
+                    text-align: justify;
+                }
+            }
+        }
+        .info-main{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+            .info-holder{
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                h4{
+                    color: $active;
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
+                p{
+                    color: $black_light;
+                    font-size: 13px;
+                    text-align: justify;
+                    margin-bottom: 10px;
+                    line-height: 15px;
+                    a{
+                        color: $active;
+                    }
+                }
+                .lik{
+                    margin: 20px 0;
+                    a{
+                        text-decoration: none;
+                        color: $smoke_light;
+                        font-size: 13px;
+                        &:hover{
+                            color: $black_dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
