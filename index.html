@@ -11,9 +11,9 @@
     <!-- Header Section Start -->
     <header id="header">
         <div class="logo">
-            <img src="/images/logo.png" alt="Logo">
+            <a href="#index.html" target="_parent"><img src="/images/logo.png" alt="Logo"></a>
         </div>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a id="active_1" href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -24,15 +24,18 @@
         </nav>
     </header>
     <!-- Header Section End -->
+
     <!-- Main Section Start -->
-    <main>
+    <main id="main-content">
         <!-- Aside Section Start -->
-        <aside>
+        <aside class="main-left">
             <div class="search-bar">
-                <input type="text" name="search" id="search" placeholder="search....">
-                <div class="search-holder">
-                    <img src="/images/btn-go.png" alt="search-bar">
-                </div>
+                <form method="get">
+                    <input type="text" name="search" id="search" placeholder="search....">
+                    <div class="search-holder">
+                        <img src="/images/btn-go.png" alt="search-bar">
+                    </div>
+                </form>
                 <!-- Article Section Start -->
                 <article class="latest">
                     <h4>Latest news</h4>
@@ -43,6 +46,7 @@
                     </div>
                 </article>
                 <!-- Article Section End-->
+
                 <!-- Article Section Start -->
                 <article class="latest">
                     <h6 class="latest-sub"> Integer vel felis at metus rhoncus</h6>
@@ -52,9 +56,11 @@
                     </div>
                 </article>
                 <!-- Article Section End -->
+
             </div>
         </aside>
         <!-- Aside Section End -->
+
         <!-- Section  Start -->
         <section class="main-section">
             <div class="main-holder">
@@ -69,6 +75,7 @@
                 </article>
                 <!-- Article Section end -->
             </div>
+
             <!-- Article Section Start -->
             <div class="info-main">
                 <!-- Article Section Start -->
@@ -81,6 +88,7 @@
                     </div>
                 </article>
                 <!-- Article Section End -->
+
                 <!-- Article Section Start -->
                 <article class="info-holder">
                     <img src="/images/img03.png" alt="tutorials">
@@ -91,6 +99,7 @@
                     </div>
                 </article>
                 <!-- Article Section End -->
+
                 <!-- Article Section Start -->
                 <article class="info-holder">
                     <img src="/images/img04.png" alt="graphcrives">
@@ -101,17 +110,23 @@
                     </div>
                 </article>
                 <!-- Article Section End -->
+
             </div>
         </section>
         <!-- Section End -->
     </main>
     <!-- Main Section End -->
+    
     <!-- Footer Section Start -->
-    <footer>
+    <footer id="footer-content">
         <div class="icons">
-            <div class="icon-image">
-                <img src="/images/sprite.png" alt="footer-icons">
-            </div>
+            <ul id="sprite">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
             <div class="copywrite">
                 <small>Copyright © 2010 Minimal. All rights reserved. </small>
             </div>

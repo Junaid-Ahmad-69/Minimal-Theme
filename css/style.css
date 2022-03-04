@@ -21,19 +21,23 @@
 }
 #header .logo {
   flex: 0 0 50%;
+  cursor: pointer;
 }
-#header nav ul li {
+#header .navbar ul li {
   display: inline-block;
 }
-#header nav ul li a {
+#header .navbar ul li a {
   text-decoration: none;
   margin: 0 20px;
   color: #000000;
   font-size: 20px;
   color: #a7a7a7;
 }
+#header .navbar ul li a:hover {
+  color: #0481c2;
+}
 
-main {
+#main-content {
   padding: 0 15px;
   margin: auto;
   width: 100%;
@@ -42,40 +46,40 @@ main {
   grid-template-columns: repeat(2, 230px 770px);
   grid-gap: 10px;
 }
-main aside {
+#main-content .main-left {
   border-top: 4px solid #0481c2;
   border-bottom: 4px solid #0481c2;
 }
-main aside .search-bar {
+#main-content .main-left .search-bar {
   margin: 25px 0;
   position: relative;
 }
-main aside .search-bar input {
+#main-content .main-left .search-bar input {
   border: none;
   outline: none;
   border: 1px solid #515151;
   height: 27px;
   width: 228px;
 }
-main aside .search-bar ::placeholder {
+#main-content .main-left .search-bar ::placeholder {
   padding: 10px;
   font-size: 12px;
   color: #d2d1d1;
   font-family: "Arial";
 }
-main aside .search-bar .search-holder {
+#main-content .main-left .search-bar .search-holder {
   position: absolute;
   right: 10px;
   top: 4px;
 }
-main aside .search-bar .search-holder img {
+#main-content .main-left .search-bar .search-holder img {
   object-fit: cover;
   width: 100%;
 }
-main aside .search-bar .latest {
+#main-content .main-left .search-bar .latest {
   border-bottom: 1px solid #404040;
 }
-main aside .search-bar .latest h4 {
+#main-content .main-left .search-bar .latest h4 {
   font-size: 24px;
   color: #0481c2;
   font-weight: lighter;
@@ -83,39 +87,42 @@ main aside .search-bar .latest h4 {
   border-bottom: 1px solid #878787;
   padding-bottom: 5px;
 }
-main aside .search-bar .latest .latest-sub {
+#main-content .main-left .search-bar .latest .latest-sub {
   color: #0481c2;
   font-size: 14px;
   margin: 25px 0 10px 0;
   font-weight: 500;
 }
-main aside .search-bar .latest .latest-sub-2 {
+#main-content .main-left .search-bar .latest .latest-sub-2 {
   font-size: 12px;
   color: #404040;
   text-align: justify;
   margin-bottom: 10px;
 }
-main aside .search-bar .latest .read {
+#main-content .main-left .search-bar .latest .read {
   margin-bottom: 20px;
 }
-main aside .search-bar .latest .read a {
+#main-content .main-left .search-bar .latest .read a {
   color: #aaaaaa;
   font-size: 12px;
   text-decoration: none;
 }
-main .main-section {
+#main-content .main-left .search-bar .latest .read a:hover {
+  color: #404040;
+}
+#main-content .main-section {
   border-top: 4px solid #0481c2;
   border-bottom: 4px solid #0481c2;
 }
-main .main-section .main-holder {
+#main-content .main-section .main-holder {
   margin: 25px 0;
   position: relative;
 }
-main .main-section .main-holder img {
+#main-content .main-section .main-holder img {
   width: 100%;
   object-fit: cover;
 }
-main .main-section .main-holder .overlay {
+#main-content .main-section .main-holder .overlay {
   position: absolute;
   right: 0;
   width: 210px;
@@ -126,73 +133,85 @@ main .main-section .main-holder .overlay {
   padding: 40px;
   z-index: 1;
 }
-main .main-section .main-holder .description {
+#main-content .main-section .main-holder .description {
   position: absolute;
   right: 0;
   top: 60px;
   color: #ffffff;
   z-index: 1;
 }
-main .main-section .main-holder .description h3 {
+#main-content .main-section .main-holder .description h3 {
   text-align: center;
   opacity: 1;
   margin: 10px 0;
   color: #ffffff;
   font-size: 18px;
 }
-main .main-section .main-holder .description p {
+#main-content .main-section .main-holder .description p {
   font-size: 12px;
   width: 210px;
   padding: 12px;
   text-align: justify;
 }
-main .main-section .info-main {
+#main-content .main-section .info-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
-main .main-section .info-main .info-holder img {
+#main-content .main-section .info-main .info-holder img {
   width: 100%;
   object-fit: cover;
 }
-main .main-section .info-main .info-holder h4 {
+#main-content .main-section .info-main .info-holder h4 {
   color: #0481c2;
   font-size: 18px;
   margin: 10px 0;
 }
-main .main-section .info-main .info-holder p {
+#main-content .main-section .info-main .info-holder p {
   color: #3c3c3c;
   font-size: 13px;
   text-align: justify;
   margin-bottom: 10px;
   line-height: 15px;
 }
-main .main-section .info-main .info-holder p a {
+#main-content .main-section .info-main .info-holder p a {
   color: #0481c2;
 }
-main .main-section .info-main .info-holder .lik {
+#main-content .main-section .info-main .info-holder .lik {
   margin: 20px 0;
 }
-main .main-section .info-main .info-holder .lik a {
+#main-content .main-section .info-main .info-holder .lik a {
   text-decoration: none;
   color: #aaaaaa;
   font-size: 13px;
 }
+#main-content .main-section .info-main .info-holder .lik a:hover {
+  color: #404040;
+}
 
-footer {
+#footer-content {
   padding: 0 15px;
   margin: auto;
   width: 100%;
   max-width: 1050px;
 }
-footer .icons {
+#footer-content .icons {
   display: flex;
+  justify-content: space-between;
   margin: 15px 0;
+  background-image: url("/images/sprite.png");
+  background-repeat: no-repeat;
 }
-footer .icons .icon-image {
-  flex: 0 0 75%;
+#footer-content .icons:hover {
+  cursor: pointer;
 }
-footer .icons .copywrite small {
+#footer-content .icons #sprite {
+  padding: 12px;
+}
+#footer-content .icons #sprite li {
+  list-style-type: none;
+}
+#footer-content .copywrite small {
   font-size: 12px;
   color: #404040;
 }

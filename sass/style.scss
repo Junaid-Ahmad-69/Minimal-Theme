@@ -22,8 +22,9 @@
     padding: 30px 0;
     .logo{
         flex: 0 0 50%;
+        cursor: pointer;
     }
-    nav{
+    .navbar{
         ul{
             li{
                 display: inline-block;
@@ -33,17 +34,20 @@
                     color: $black;
                     font-size: 20px;
                     color: $grey;
+                    &:hover{
+                        color: $active
+                    }
                 }
             }
         }
     }
 }
-main{
+#main-content{
     @include container;
     display: grid;
     grid-template-columns: repeat(2,230px 770px);
     grid-gap: 10px;
-    aside{
+    .main-left{
         border-top: 4px solid $active;
         border-bottom: 4px solid $active;
         .search-bar{
@@ -100,6 +104,9 @@ main{
                         color: $smoke_light;
                         font-size: 12px;
                         text-decoration: none;
+                        &:hover{
+                            color: $black_dark;
+                        }
                     }
                 }
             }
@@ -177,25 +184,37 @@ main{
                         text-decoration: none;
                         color: $smoke_light;
                         font-size: 13px;
+                        &:hover{
+                            color: $black_dark;
+                        }
                     }
                 }
             }
         }
     }
 }
-footer{
+#footer-content{
     @include container;
     .icons{
         display: flex;
+        justify-content: space-between;
         margin: 15px 0;
-        .icon-image{
-            flex: 0 0 75%;
+        background-image: url("/images/sprite.png");
+        background-repeat: no-repeat;
+        &:hover{
+            cursor: pointer;
         }
-        .copywrite{
-            small{
-                font-size: 12px;
-                color: $black_dark;
+        #sprite{
+            padding: 12px;
+            li{
+                list-style-type: none;
             }
         }
     }
-}
+    .copywrite{
+        small{
+            font-size: 12px;
+            color: $black_dark;
+            }
+        }
+    }
