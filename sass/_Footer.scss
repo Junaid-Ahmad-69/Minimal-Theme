@@ -27,3 +27,26 @@
         }
     }
 }
+// Tablet Responsive
+@media screen and (max-width:425px){
+    #footer-content{
+        .icons{
+            display: block;
+            #sprite{
+                text-align: center;
+                li{
+                    a{
+                        padding-left: 15px;
+                    }
+                }
+            }
+            .copywrite{
+                text-align: center;
+                margin: 10px 0;
+                small{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
